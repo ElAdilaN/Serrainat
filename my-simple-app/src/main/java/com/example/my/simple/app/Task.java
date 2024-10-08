@@ -30,7 +30,7 @@ public class Task {
     public boolean isCompleted() {
         return isCompleted;
 
-    
+
 }
 
     public void setCompleted(boolean completed) {
@@ -39,9 +39,6 @@ public class Task {
 
     @Override
     public String toString() {
-        return "Task{" +
-                "description='" + description + '\'' +
-                ", isCompleted=" + isCompleted +
-                '}';
+        return (isCompleted ? "[Completada] " : "[Pendent] ") + description;
     }
 }
