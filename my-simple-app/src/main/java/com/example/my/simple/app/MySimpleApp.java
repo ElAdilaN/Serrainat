@@ -36,7 +36,10 @@ public class MySimpleApp {
                     System.out.println("Tasca afegida correctament!");
                     break;
                 case 2:
+<<<<<<< HEAD
 
+=======
+>>>>>>> b8521ceb0c3c03718a1edc0a61d384cbd15f2e92
                     System.out.println("Selecciona el número de la tasca que vols marcar com completada:");
                     for (int i = 0; i < tasks.size(); i++) {
                         System.out.println(i + 1 + ". " + tasks.get(i).getDescription() + " (Completada: " + tasks.get(i).isCompleted() + ")");
