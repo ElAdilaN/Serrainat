@@ -34,7 +34,17 @@ public static void main(String[] args) {
                     // Agregar una nueva tarea
                     break;
                 case 2:
-                    // Marcar una tarea como completada
+                    System.out.println("Selecciona el número de la tasca que vols marcar com completada:");
+                    for (int i = 0; i < tasks.size(); i++) {
+                        System.out.println(i + 1 + ". " + tasks.get(i).getDescription() + " (Completada: " + tasks.get(i).isCompleted() + ")");
+                    }
+                    int taskIndex = scanner.nextInt() - 1;
+                    if (taskIndex >= 0 && taskIndex < tasks.size()) {
+                        tasks.get(taskIndex).setCompleted(true);
+                        System.out.println("Tasca marcada com a completada!");
+                    } else {
+                        System.out.println("Índex no vàlid.");
+                    }
                     break;
                 case 3:
                     // Mostrar la lista de tareas
