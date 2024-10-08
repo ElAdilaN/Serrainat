@@ -28,10 +28,15 @@ public static void main(String[] args) {
             System.out.println("4. Salir");
 
             int option = scanner.nextInt();
+            
 
             switch (option) {
                 case 1:
-                    // Agregar una nueva tarea
+                  System.out.println("Introdueix la descripció de la tasca:");
+                 scanner.nextLine();  // Consumir la línia buida
+                String description = scanner.nextLine();
+                 tasks.add(new Task(description));
+                     System.out.println("Tasca afegida correctament!");
                     break;
                 case 2:
                     // Marcar una tarea como completada
