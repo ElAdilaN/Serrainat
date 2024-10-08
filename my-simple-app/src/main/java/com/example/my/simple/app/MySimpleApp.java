@@ -50,9 +50,12 @@ public class MySimpleApp {
                     }
                     break;
 
-                    break;
                 case 3:
-                    // Mostrar la lista de tareas
+
+                    System.out.println("Llista de tasques:");
+                    for (Task task : tasks) {
+                        System.out.println(task);
+                    }
                     break;
                 case 4:
                     System.exit(0);
